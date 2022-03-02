@@ -44,7 +44,6 @@ if __name__ == "__main__":
     parser.add_argument("--invert", action="store_true", default=False, help="If passed, braille dots are treated as black pixels instead of white")
 
     args = parser.parse_args()
-    print(args.invert)
 
     with open(args.output_path, "w", encoding="utf-8") as f:
         f.write(braille_img_convert(
